@@ -1,0 +1,35 @@
+.line_input{
+    display: grid;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-top: 2px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #eceaf3;
+    border-radius: 3px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #7B7B7B;
+}
+
+button {
+    border: 0px;
+    outline: none;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #272727;
+    transition: all ease-in 0.2s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #161616;
+    transform: scale(1.1);
+}
