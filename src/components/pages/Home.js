@@ -72,9 +72,10 @@ function Home() {
 
 
     const handleEdit = async () => {
-        const data = await fetch(API + "/data")
-        .then((res) => res.json())
-        .then((data) => data)
+        if (validateInputField()) {
+            const data = await fetch(API + "/data")
+            .then((res) => res.json())
+            .then((data) => data)
 
         for(let i = 0; i < data.length; i++){
             if(data[i].id == id){
@@ -87,6 +88,7 @@ function Home() {
         handleClean()
 
         document.getElementById("btn").innerText = "Salvar"
+        }
 
         }
     }
